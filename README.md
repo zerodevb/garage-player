@@ -46,13 +46,15 @@ Garage Player is the IPTV app from [**Garage Home**](https://github.com/zerodevb
 
 ## Build and install
 
+> **Using Claude Code?** Open this folder and ask *"install Garage Player on my TV"* — [CLAUDE.md](CLAUDE.md) walks Claude through every step with you.
+
 ```bash
 cp garage.env.example garage.env     # set TV, CERT_DIR and KEYCHAIN_SERVICE
 (cd tools/signing && npm ci --ignore-scripts)
 ./build-player.sh
 ```
 
-`garage.env` is git-ignored. Signing passwords are read from the macOS Keychain. Set `window.GARAGE_CONFIG = {tvIp: '…'}` to enable the phone QR code, and `window.GP_PROXY` to use a different proxy.
+`garage.env` is git-ignored. Signing passwords are read from the macOS Keychain. The build writes the TV's IP into `garage-config.js` for the phone QR code. Set `window.GP_PROXY` to use a different proxy.
 
 Open `player/index.html` in a desktop browser for a preview.
 
