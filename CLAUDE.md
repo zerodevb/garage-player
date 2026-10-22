@@ -34,7 +34,7 @@ Go one step at a time, and check each step before the next. Many steps happen on
 - Files that get packaged are listed in `FILES` in each `build.cjs`; add new files there.
 - Preview in a desktop browser by opening `player/index.html` (`player/preview.js` stubs the TV APIs).
 - Per-TV settings come from `garage-config.js`, generated at build time from `garage.env` (`tvIp`, and `standalone` from `GARAGE_STANDALONE=1` when the user has no Vetro: phone QR hidden, playlists load directly). Don't hard-code IPs or locations.
-- Keep the look: petrol/teal palette and the **garage**player wordmark and the white icon.
+- Keep the look: petrol/teal palette, the **garage**player wordmark with its IPTV badge, and the play + signal icon.
 
 ## Safety
 
