@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="player/icon.png" alt="Garage Player icon" width="112">
+  <img src="docs/images/icon.png" alt="Garage Player IPTV icon" width="112">
 </p>
 <h1 align="center"><b>garage</b>player</h1>
 <p align="center"><strong>A free IPTV player for Samsung Smart TVs (Tizen).</strong></p>
@@ -16,10 +16,10 @@
 Garage Player is an open-source **IPTV player for Samsung Smart TV** that plays **M3U / M3U8** and **Xtream Codes** playlists with an **EPG** TV guide on Tizen. It is the IPTV app from [**Garage Home**](https://github.com/zerodevb/garage-home), packaged on its own. It is designed for the remote, fast on older TVs and brings no ads or accounts. Garage Player does not include any channels; bring your own playlist.
 
 <p align="center">
-  <img src="docs/images/garage-player.png" alt="Garage Player channel list with preview" width="1000">
+  <img src="docs/images/garage-player.jpg" alt="Garage Player IPTV channel list with preview" width="1000">
 </p>
 <p align="center">
-  <img src="docs/images/garage-player-screens.png" alt="Garage Player screens: playlists, EPG and settings" width="1000">
+  <img src="docs/images/garage-player-screens.jpg" alt="Garage Player screens: manage folders, settings and channel options" width="1000">
 </p>
 
 ## Features
@@ -27,7 +27,9 @@ Garage Player is an open-source **IPTV player for Samsung Smart TV** that plays 
 - **Playlists.** M3U/M3U8 links and Xtream Codes logins, several playlists side by side.
 - **Browse fast.** Folders (groups), favourites and search.
 - **EPG.** XMLTV guides, gzip supported, matched to channels by id or name; now/next on the overlay.
-- **Add from your phone.** Scan the QR code on the TV, paste the link on your phone, confirm on the TV.
+- **Add from your phone.** Type long links with the SmartThings app keyboard, or (with Vetro) scan the QR code on the TV and paste the link on your phone.
+- **Playback keys.** Play, Pause and Stop on the remote, plus Pause/Resume and Stop in the full-screen options.
+- **Clear messages.** No-internet notice that resumes on reconnect, loading spinners, and errors that say what to check.
 - **PIN locks.** Lock playlists, folders or channels; adult groups are locked automatically.
 - **Resets.** Clear favourites, locks or everything from Settings.
 
@@ -38,7 +40,8 @@ Garage Player is an open-source **IPTV player for Samsung Smart TV** that plays 
 | OK | Show the channel overlay |
 | Hold OK | Channel options (favourite, lock) |
 | Up / Down, CH +/− | Change channel |
-| Back | Hide the info bar, then go back |
+| Play / Pause / Stop | Pause, resume, back to the channel list |
+| Back | Hide the info bar, then go back; on the first screen asks before closing |
 
 ## Requirements
 
@@ -55,7 +58,7 @@ cp garage.env.example garage.env     # set TV, CERT_DIR and KEYCHAIN_SERVICE
 ./build-player.sh
 ```
 
-`garage.env` is git-ignored. Signing passwords are read from the macOS Keychain. The build writes the TV's IP into `garage-config.js` for the phone QR code. Set `window.GP_PROXY` to use a different proxy.
+`garage.env` is git-ignored. Signing passwords are read from the macOS Keychain. The build writes the TV's IP into `garage-config.js` for the phone QR code. Without Vetro, set `GARAGE_STANDALONE=1` in `garage.env`: the phone QR option is hidden and playlists load straight from their servers. Set `window.GP_PROXY` to use a different proxy.
 
 Open `player/index.html` in a desktop browser for a preview.
 
