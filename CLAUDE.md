@@ -41,7 +41,7 @@ Go one step at a time, and check each step before the next. Many steps happen on
 - Don't edit Samsung system files, boot scripts or firmware on the TV, and don't try to get around Samsung's signature checks. Garage Player is a normal installed app.
 - Ask before anything that changes the TV: installing, uninstalling, Vetro actions.
 - Don't help find or share pirated streams; Garage Player is for playlists the user has the right to watch.
-- Vetro's dashboard is plain HTTP with no login. Keep the TV on a trusted home network.
+- Vetro (Garage branch) refuses unpaired network clients. A browser pairs on the dashboard page; scripts pair with `TV=<tv-ip> node tools/vetro-key.mjs` (Garage Home repo), and the TV shows a 6-digit code: ask the user to read it to you. The key goes in `tools/.vetro-key` (git-ignored); never print it. Traffic is still plain HTTP, so keep the TV on a trusted home network.
 
 ## License
 
