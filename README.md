@@ -22,6 +22,15 @@ Garage Player is an open-source **IPTV player for Samsung Smart TV** that plays 
   <img src="docs/images/garage-player-screens.jpg" alt="Garage Player screens: manage folders, settings and channel options" width="1000">
 </p>
 
+## What's new
+
+**Garage Player 1.1.0**
+
+- New IPTV icon and wordmark badge.
+- Play/Pause/Stop on the remote, plus Pause/Resume and Stop in the full-screen options; the screensaver stays off while a channel plays.
+- A no-internet message that resumes playback when the connection is back, loading spinners, and Back on the first screen asks before closing.
+- `GARAGE_STANDALONE=1` builds Garage Player for TVs without Vetro (playlists load straight from their servers; the TV doesn't block them).
+
 ## Features
 
 - **Playlists.** M3U/M3U8 links and Xtream Codes logins, several playlists side by side.
