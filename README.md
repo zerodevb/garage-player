@@ -46,7 +46,7 @@ Garage Player is an open-source **IPTV player for Samsung Smart TV** that plays 
 ## Requirements
 
 - A Samsung Tizen TV with **Developer Mode**, **Tizen Studio** (TV Extensions + Samsung Certificate Extension) and a Samsung **certificate profile**.
-- Optional: **[Vetro](https://github.com/andrearicci93/vetro) with the Garage additions** — fork [zerodevb/vetro](https://github.com/zerodevb/vetro), branch `garage` (based on upstream [`e8553f2`](https://github.com/andrearicci93/vetro/commit/e8553f2)). It adds the phone QR inbox and a local proxy for playlists and guides that block TV apps. Without it, playlists that allow direct access still work.
+- Optional: **[Vetro](https://github.com/andrearicci93/vetro) with the Garage additions** — fork [zerodevb/vetro](https://github.com/zerodevb/vetro), branch `garage` (Vetro 0.3.2 plus the Garage additions; the original tested base is kept as tag `upstream-e8553f2`). It adds the phone QR inbox and a local proxy for playlists and guides that block TV apps. Without it, playlists that allow direct access still work.
 
 ## Build and install
 

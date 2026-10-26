@@ -7,7 +7,7 @@ Guidance for Claude Code when helping someone install, configure or change **Gar
 - `player/` — Garage Player, an IPTV web app (`GaragePlay.player`) for M3U/Xtream playlists with EPG. It is also part of `zerodevb/garage-home`.
 - `tools/build-install.sh` — signs the app with the user's Samsung certificate, installs it over SDB and opens it. Called by `build-player.sh`.
 - `tools/signing/` — Node signing dependencies (from Vetro).
-- Optional: the phone QR inbox and the playlist/EPG proxy come from **Vetro with the Garage additions**: `https://github.com/zerodevb/vetro`, branch `garage`, based on upstream `andrearicci93/vetro` commit `e8553f2` (tag `upstream-e8553f2`). Use that branch, not upstream `main`, unless the user asks to update.
+- Optional: the phone QR inbox and the playlist/EPG proxy come from **Vetro with the Garage additions**: `https://github.com/zerodevb/vetro`, branch `garage`, currently Vetro 0.3.2 plus the Garage additions (the original tested base is kept as tag `upstream-e8553f2`). Use that branch, not upstream `main`, unless the user asks to update.
 
 ## Install walkthrough
 
